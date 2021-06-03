@@ -7,6 +7,11 @@ This application creates a pattern to guide the leaser with the help of Servomot
 https://user-images.githubusercontent.com/84999739/120642304-65a1f100-c47d-11eb-95dd-40ae78129086.mp4
 
 
+https://user-images.githubusercontent.com/84999739/120642933-2d4ee280-c47e-11eb-935e-f346fc051fba.mp4
+
+
+
+
 
 For further help, use the email addresses or read the instruction file.
 ## Installation:
