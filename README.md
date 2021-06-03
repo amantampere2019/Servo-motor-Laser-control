@@ -6,6 +6,9 @@ This application creates a pattern to guide the leaser with the help of Servomot
 
 For further help, use the email addresses or read the instruction file.
 ## Installation:
+ScanLineAppByAK.mlapp 
+or 
+Servo-motor-Laser-control/for_redistribution_files_only/ScanningPattern.exe
 ![Install](https://user-images.githubusercontent.com/84999739/120638822-4f923180-c479-11eb-88a7-6b58dab91909.JPG)
 
 ## GUI interface:
