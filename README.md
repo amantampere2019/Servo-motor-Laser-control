@@ -4,6 +4,10 @@
 
 This application creates a pattern to guide the leaser with the help of Servomotor and adjustable mirrors. KDC101, K-Cube Brushed DC Servo Motor Controllers from Thorlabs are used in the physical setup. This application required APT software from Thorlabs. Different motor controllers from Thorlabs can utilize this application.
 
+https://user-images.githubusercontent.com/84999739/120642304-65a1f100-c47d-11eb-95dd-40ae78129086.mp4
+
+
+
 For further help, use the email addresses or read the instruction file.
 ## Installation:
 ScanLineAppByAK.mlapp 
