@@ -1,0 +1,180 @@
+
+--------------------------------------------------------------------------------
+          Access violation detected at Fri May 28 04:48:45 2021 +0300
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : US-ASCII
+  Deployed                 : true
+  Graphics Driver          : Intel Intel(R) HD Graphics 4600 Version 4.3.0 - Build 20.19.15.5126
+  Graphics card 1          : Intel Corporation ( 0x8086 ) Intel(R) HD Graphics 4600 Version 20.19.15.5126 (2020-1-21)
+  Java Version             : Java 1.8.0_181-b13 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : win64
+  MATLAB Entitlement ID    : Unknown
+  MATLAB Root              : C:\Program Files\MATLAB\R2019a
+  MATLAB Version           : 9.6.0.1072779 (R2019a)
+  OpenGL                   : hardware
+  Operating System         : Microsoft Windows 10 Education
+  Process ID               : 10720
+  Processor ID             : x86 Family 6 Model 60 Stepping 3, GenuineIntel
+  Session Key              : 600b50c9-1b2e-4eb4-ab39-9e98334e0131
+  Window System            : Version 10.0 (Build 17134)
+
+Fault Count: 1
+
+
+Abnormal termination:
+Access violation
+
+Register State (from fault):
+  RAX = 00000000d515d9e0  RBX = 0000000000000000
+  RCX = 0000000000000000  RDX = 0000000000000000
+  RSP = 000000004c2903e8  RBP = 00000000d4b6f880
+  RSI = 0000000000000000  RDI = 00000000d515d020
+ 
+   R8 = 0000000000000005   R9 = 0000000000000007
+  R10 = 00000000d4b6e4f0  R11 = 0000000000000000
+  R12 = 0000000000000000  R13 = 0000000000000002
+  R14 = 0000000000000002  R15 = 00000000d515d020
+ 
+  RIP = 00007ffec5834f90  EFL = 00010246
+ 
+   CS = 0033   FS = 0053   GS = 002b
+
+Stack Trace (from fault):
+[  0] 0x00007ffec5834f90                     C:\Windows\SYSTEM32\mfc140.dll+02838416
+[  1] 0x00000000eb6a2cb1 C:\Program Files\Thorlabs\APT\APT Server\MG17Motor.ocx+00208049 DllUnregisterServer+00189617
+[  2] 0x00000000eb676911 C:\Program Files\Thorlabs\APT\APT Server\MG17Motor.ocx+00026897 DllUnregisterServer+00008465
+[  3] 0x00000000eb6a766c C:\Program Files\Thorlabs\APT\APT Server\MG17Motor.ocx+00226924 DllUnregisterServer+00208492
+[  4] 0x00007ffec5818602                     C:\Windows\SYSTEM32\mfc140.dll+02721282
+[  5] 0x00007ffec5817f5f                     C:\Windows\SYSTEM32\mfc140.dll+02719583
+[  6] 0x00007ffec5769b64                     C:\Windows\SYSTEM32\mfc140.dll+02005860
+[  7] 0x00007ffec5815773                     C:\Windows\SYSTEM32\mfc140.dll+02709363
+[  8] 0x00007ffec5815b44                     C:\Windows\SYSTEM32\mfc140.dll+02710340
+[  9] 0x00000000eb6d74da C:\Program Files\Thorlabs\APT\APT Server\MG17Motor.ocx+00423130 DllUnregisterServer+00404698
+[ 10] 0x00007fff4aae6d91                     C:\Windows\System32\USER32.dll+00093585 CallWindowProcW+00001217
+[ 11] 0x00007fff4ab17f2c                     C:\Windows\System32\USER32.dll+00294700 LoadMenuA+00000284
+[ 12] 0x00007fff4ab1862b                     C:\Windows\System32\USER32.dll+00296491 CallWindowProcA+00000027
+[ 13] 0x00000000779845d9                               bin\win64\comcli.dll+00083417
+[ 14] 0x00007fff4aae6d91                     C:\Windows\System32\USER32.dll+00093585 CallWindowProcW+00001217
+[ 15] 0x00007fff4aae6a6c                     C:\Windows\System32\USER32.dll+00092780 CallWindowProcW+00000412
+[ 16] 0x00007fff4aaefea3                     C:\Windows\System32\USER32.dll+00130723 IsWindowVisible+00000419
+[ 17] 0x00007fff4b99e804                      C:\Windows\SYSTEM32\ntdll.dll+00649220 KiUserCallbackDispatcher+00000036
+[ 18] 0x00007fff480923c4                     C:\Windows\System32\win32u.dll+00009156 NtUserDestroyWindow+00000020
+[ 19] 0x00000000779941ff                               bin\win64\comcli.dll+00147967 QueryMLFcnTable_comcli+00009695
+[ 20] 0x0000000022993a76                                  bin\win64\udd.dll+00408182 UDMethodInfo::invokeMethodE+00000038
+[ 21] 0x0000000030dea22a                               bin\win64\udd_mi.dll+00434730 ouAddBuiltInMethod+00001706
+[ 22] 0x0000000030de9e1f                               bin\win64\udd_mi.dll+00433695 ouAddBuiltInMethod+00000671
+[ 23] 0x00000000312adcac                        bin\win64\pgo\mcos_impl.dll+03202220 mwboost::serialization::singleton_module::unlock+01877172
+[ 24] 0x0000000030ffa1ea                        bin\win64\pgo\mcos_impl.dll+00369130
+[ 25] 0x000000001f43736c                     bin\win64\pgo\m_dispatcher.dll+00029548 mdFindFunctionFromUserSpecifiedName+00018236
+[ 26] 0x000000001f4380f1                     bin\win64\pgo\m_dispatcher.dll+00033009 Mfh_MATLAB_fn_impl::dispatch_with_reuse+00000045
+[ 27] 0x000000001f64fed0                            bin\win64\pgo\m_lxe.dll+00458448
+[ 28] 0x000000001f651cbe                            bin\win64\pgo\m_lxe.dll+00466110
+[ 29] 0x000000001f7fa039                            bin\win64\pgo\m_lxe.dll+02203705 mwboost::archive::detail::oserializer<mwboost::archive::binary_oarchive,foundation::msg_svc::eventmgr::BaseEvent>::oserializer<mwboost::archive::binary_oarchive,foundation::msg_svc::eventmgr::BaseEvent>+00008405
+[ 30] 0x000000001f654c2f                            bin\win64\pgo\m_lxe.dll+00478255
+[ 31] 0x000000001f7862ff                            bin\win64\pgo\m_lxe.dll+01729279 mwboost::archive::detail::iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree>::load_object_data+01130775
+[ 32] 0x000000001f65b1b1                            bin\win64\pgo\m_lxe.dll+00504241
+[ 33] 0x000000001f80ce49                            bin\win64\pgo\m_lxe.dll+02281033 mwboost::archive::detail::iserializer<mwboost::archive::binaryTerm_iarchive,mwboost::shared_ptr<MathWorks::lxe::MatlabIrTree> >::load_object_data+00041317
+[ 34] 0x000000001f706ebc                            bin\win64\pgo\m_lxe.dll+01207996 mwboost::archive::detail::iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree>::load_object_data+00609492
+[ 35] 0x000000001f707ba3                            bin\win64\pgo\m_lxe.dll+01211299 mwboost::archive::detail::iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree>::load_object_data+00612795
+[ 36] 0x000000001f709ced                            bin\win64\pgo\m_lxe.dll+01219821 mwboost::archive::detail::iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree>::load_object_data+00621317
+[ 37] 0x000000001f7090cf                            bin\win64\pgo\m_lxe.dll+01216719 mwboost::archive::detail::iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree>::load_object_data+00618215
+[ 38] 0x000000001f7095fc                            bin\win64\pgo\m_lxe.dll+01218044 mwboost::archive::detail::iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree>::load_object_data+00619540
+[ 39] 0x000000001f659934                            bin\win64\pgo\m_lxe.dll+00497972
+[ 40] 0x000000001f6602b5                            bin\win64\pgo\m_lxe.dll+00524981
+[ 41] 0x000000001f65f85c                            bin\win64\pgo\m_lxe.dll+00522332
+[ 42] 0x000000001f64f261                            bin\win64\pgo\m_lxe.dll+00455265
+[ 43] 0x000000001f64e5e3                            bin\win64\pgo\m_lxe.dll+00452067
+[ 44] 0x000000001f64efbc                            bin\win64\pgo\m_lxe.dll+00454588
+[ 45] 0x00000000310110cc                        bin\win64\pgo\mcos_impl.dll+00463052
+[ 46] 0x0000000031010d10                        bin\win64\pgo\mcos_impl.dll+00462096
+[ 47] 0x0000000031010a02                        bin\win64\pgo\mcos_impl.dll+00461314
+[ 48] 0x0000000031009dba                        bin\win64\pgo\mcos_impl.dll+00433594
+[ 49] 0x0000000031007d5f                        bin\win64\pgo\mcos_impl.dll+00425311
+[ 50] 0x0000000030fea36c                        bin\win64\pgo\mcos_impl.dll+00303980
+[ 51] 0x0000000030ffc2c0                        bin\win64\pgo\mcos_impl.dll+00377536
+[ 52] 0x0000000030ffba62                        bin\win64\pgo\mcos_impl.dll+00375394
+[ 53] 0x0000000030ffab5b                        bin\win64\pgo\mcos_impl.dll+00371547
+[ 54] 0x0000000030ff5dba                        bin\win64\pgo\mcos_impl.dll+00351674
+[ 55] 0x0000000030ff59dc                        bin\win64\pgo\mcos_impl.dll+00350684
+[ 56] 0x0000000030ffa26a                        bin\win64\pgo\mcos_impl.dll+00369258
+[ 57] 0x000000001f438f49                     bin\win64\pgo\m_dispatcher.dll+00036681 AutoPushingExecutionFrame::AutoPushingExecutionFrame+00000825
+[ 58] 0x000000001f4380bd                     bin\win64\pgo\m_dispatcher.dll+00032957 Mfh_MATLAB_fn_impl::dispatch+00000045
+[ 59] 0x000000001f654fb9                            bin\win64\pgo\m_lxe.dll+00479161
+[ 60] 0x000000001f7d64f2                            bin\win64\pgo\m_lxe.dll+02057458 MathWorks::lxe::StartupLxeEngine+00034326
+[ 61] 0x000000001f7d6366                            bin\win64\pgo\m_lxe.dll+02057062 MathWorks::lxe::StartupLxeEngine+00033930
+[ 62] 0x000000001f65b1b1                            bin\win64\pgo\m_lxe.dll+00504241
+[ 63] 0x000000001f7f303d                            bin\win64\pgo\m_lxe.dll+02175037 mwboost::archive::detail::oserializer<mwboost::archive::binaryTerm_oarchive,std::vector<unsigned int,std::allocator<unsigned int> > >::oserializer<mwboost::archive::binaryTerm_oarchive,std::vector<unsigned int,std::allocator<unsigned int> > >+00017649
+[ 64] 0x000000001f706ebc                            bin\win64\pgo\m_lxe.dll+01207996 mwboost::archive::detail::iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree>::load_object_data+00609492
+[ 65] 0x000000001f707ba3                            bin\win64\pgo\m_lxe.dll+01211299 mwboost::archive::detail::iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree>::load_object_data+00612795
+[ 66] 0x000000001f709ced                            bin\win64\pgo\m_lxe.dll+01219821 mwboost::archive::detail::iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree>::load_object_data+00621317
+[ 67] 0x000000001f7090cf                            bin\win64\pgo\m_lxe.dll+01216719 mwboost::archive::detail::iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree>::load_object_data+00618215
+[ 68] 0x000000001f7095fc                            bin\win64\pgo\m_lxe.dll+01218044 mwboost::archive::detail::iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree>::load_object_data+00619540
+[ 69] 0x000000001f659934                            bin\win64\pgo\m_lxe.dll+00497972
+[ 70] 0x000000001f6602b5                            bin\win64\pgo\m_lxe.dll+00524981
+[ 71] 0x000000001f65f85c                            bin\win64\pgo\m_lxe.dll+00522332
+[ 72] 0x000000001f64d4bd                            bin\win64\pgo\m_lxe.dll+00447677
+[ 73] 0x000000001f64cbdb                            bin\win64\pgo\m_lxe.dll+00445403
+[ 74] 0x000000001f64cc4e                            bin\win64\pgo\m_lxe.dll+00445518
+[ 75] 0x000000001f82dc48                            bin\win64\pgo\m_lxe.dll+02415688 mwboost::archive::detail::oserializer<mwboost::archive::xml_oarchive,MathWorks::lxe::PreLineExecutionEvent>::oserializer<mwboost::archive::xml_oarchive,MathWorks::lxe::PreLineExecutionEvent>+00015792
+[ 76] 0x000000001f82dbf6                            bin\win64\pgo\m_lxe.dll+02415606 mwboost::archive::detail::oserializer<mwboost::archive::xml_oarchive,MathWorks::lxe::PreLineExecutionEvent>::oserializer<mwboost::archive::xml_oarchive,MathWorks::lxe::PreLineExecutionEvent>+00015710
+[ 77] 0x00000000211a334a                            bin\win64\pgo\m_lxe.dll+29111114 mwboost::archive::detail::pointer_oserializer<mwboost::archive::xml_oarchive,MathWorks::lxe::PreLineExecutionEvent>::save_object_ptr+00485470
+[ 78] 0x000000001d48e400                    bin\win64\pgo\m_interpreter.dll+00386048 inLegacyEvalStringInMatlabWS+00000080
+[ 79] 0x00000000fb406f56                             bin\win64\libmwgui.dll+00225110 MCallback::_execute+00000454
+[ 80] 0x00000000fb40c31e                             bin\win64\libmwgui.dll+00246558 MCallback::executeImpl+00000350
+[ 81] 0x00000000fb40c074                             bin\win64\libmwgui.dll+00245876 MCallback::execute+00000340
+[ 82] 0x00000000d8a31bc8                          bin\win64\hgdatatypes.dll+01055688 Java_com_mathworks_test_hg_types_UTF16StringNativeTester_set+00015800
+[ 83] 0x00000000d8a2ff8c                          bin\win64\hgdatatypes.dll+01048460 Java_com_mathworks_test_hg_types_UTF16StringNativeTester_set+00008572
+[ 84] 0x00000000d8a31103                          bin\win64\hgdatatypes.dll+01052931 Java_com_mathworks_test_hg_types_UTF16StringNativeTester_set+00013043
+[ 85] 0x00000000d895cac4                          bin\win64\hgdatatypes.dll+00182980 graphics::datatype::CallbackDataType::destroy+00001028
+[ 86] 0x0000000031010d10                        bin\win64\pgo\mcos_impl.dll+00462096
+[ 87] 0x0000000031010a02                        bin\win64\pgo\mcos_impl.dll+00461314
+[ 88] 0x000000003100868b                        bin\win64\pgo\mcos_impl.dll+00427659
+[ 89] 0x00000000d807c9dd                                   bin\win64\hg.dll+03328477 hgTerminate+00529645
+[ 90] 0x00000000d7defe40                                   bin\win64\hg.dll+00654912 gbtutils::MixedModeFigure::operator=+00126064
+[ 91] 0x00000000d7e0764a                                   bin\win64\hg.dll+00751178 gbtutils::MixedModeFigure::operator=+00222330
+[ 92] 0x00000000d7e07789                                   bin\win64\hg.dll+00751497 gbtutils::MixedModeFigure::operator=+00222649
+[ 93] 0x00000000d7f975e1                                   bin\win64\hg.dll+02389473 UIClientComponentInterface::requestFocus+01375537
+[ 94] 0x0000000030e95a98                        bin\win64\graphics_util.dll+00154264 graphics_util::callbackHandler+00000456
+[ 95] 0x00000000d7f979a5                                   bin\win64\hg.dll+02390437 UIClientComponentInterface::requestFocus+01376501
+[ 96] 0x00000000d7d8c239                                   bin\win64\hg.dll+00246329 FigureButtonPressedObserver::keyPressed+00115833
+[ 97] 0x00000000fb4783c2                             bin\win64\libmwgui.dll+00689090 wm_CloseWindow+00000114
+[ 98] 0x00000000d8e5cc4c                               bin\win64\libuij.dll+00379980 uij::JavaDraw2D::setTexture+00000924
+[ 99] 0x0000000022992c58                                  bin\win64\udd.dll+00404568 UDListener::removeListenerContainer+00002392
+[100] 0x000000002298acdc                                  bin\win64\udd.dll+00371932 UDEventInfo::send+00000092
+[101] 0x0000000030f25ebc                              bin\win64\udd_jmi.dll+00155324 mwboost::serialization::singleton_module::lock+00003084
+[102] 0x0000000030f1d0a2                              bin\win64\udd_jmi.dll+00118946
+[103] 0x0000000030e95a98                        bin\win64\graphics_util.dll+00154264 graphics_util::callbackHandler+00000456
+[104] 0x0000000030f1c8f4                              bin\win64\udd_jmi.dll+00116980
+[105] 0x000000001ead170b                                  bin\win64\iqm.dll+00792331 iqm::UserEvalPlugin::pre+00040443
+[106] 0x000000001eae3954                                  bin\win64\iqm.dll+00866644 iqm::UserEvalPlugin::pre+00114756
+[107] 0x000000001eaa64de                                  bin\win64\iqm.dll+00615646 iqm::PackagedTaskPlugin::execute+00000894
+[108] 0x000000001eaa6353                                  bin\win64\iqm.dll+00615251 iqm::PackagedTaskPlugin::execute+00000499
+[109] 0x000000001ea84c27                                  bin\win64\iqm.dll+00478247 iqm::Iqm::setupIqmFcnPtrs+00088327
+[110] 0x000000001ea84c79                                  bin\win64\iqm.dll+00478329 iqm::Iqm::setupIqmFcnPtrs+00088409
+[111] 0x000000001ea84a27                                  bin\win64\iqm.dll+00477735 iqm::Iqm::setupIqmFcnPtrs+00087815
+[112] 0x000000001ea5e61a                                  bin\win64\iqm.dll+00321050 iqm::Iqm::create+00009290
+[113] 0x000000001ea5dd9f                                  bin\win64\iqm.dll+00318879 iqm::Iqm::create+00007119
+[114] 0x000000001ea5fc7d                                  bin\win64\iqm.dll+00326781 iqm::Iqm::create+00015021
+[115] 0x000000001d213045                        bin\win64\libmwservices.dll+02371653 services::system_events::PpeDispatchHook::dispatchOne+00036213
+[116] 0x000000001d2223b3                        bin\win64\libmwservices.dll+02433971 sysq::addProcessPendingEventsUnitTestHook+00006035
+[117] 0x000000001d223c60                        bin\win64\libmwservices.dll+02440288 sysq::getCondition+00004208
+[118] 0x000000001d22527d                        bin\win64\libmwservices.dll+02445949 svWS_ProcessPendingEvents+00000221
+[119] 0x00000000d8f0bfee                         bin\win64\libmwdrawnow.dll+00245742 graphics::drawnow+00000366
+[120] 0x00000000d8f0bfa3                         bin\win64\libmwdrawnow.dll+00245667 graphics::drawnow+00000291
+[121] 0x00000000d8ed7445                         bin\win64\libmwdrawnow.dll+00029765
+[122] 0x000000001f436e0a                     bin\win64\pgo\m_dispatcher.dll+00028170 mdFindFunctionFromUserSpecifiedName+00016858
+[123] 0x000000001f438f49                     bin\win64\pgo\m_dispatcher.dll+00036681 AutoPushingExecutionFrame::AutoPushingExecutionFrame+00000825
+[124] 0x000000001f4380bd                     bin\win64\pgo\m_dispatcher.dll+00032957 Mfh_MATLAB_fn_impl::dispatch+00000045
+[125] 0x000000001f654fb9                            bin\win64\pgo\m_lxe.dll+00479161
+[126] 0x000000001f7d64f2                            bin\win64\pgo\m_lxe.dll+02057458 MathWorks::lxe::StartupLxeEngine+00034326
+[127] 0x000000001f65b1b1                            bin\win64\pgo\m_lxe.dll+00504241
+
+** This crash report has been saved to disk as C:\Users\Khan\AppData\Local\Temp\matlab_crash_dump.10720-1 **
+
+
+
+MATLAB is exiting because of fatal error
